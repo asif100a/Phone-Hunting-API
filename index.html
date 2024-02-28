@@ -17,19 +17,46 @@
 
         <section>
             <div>
-                
+
             </div>
         </section>
-        
+
         <section class="container w-[80%] mx-auto">
+
             <!-- Search Phones -->
             <div class="flex justify-center mx-auto mb-14 bg-[#100F0F0D] w-fit rounded-lg">
-                <input type="text" placeholder="Search Your Phone" id="search-field" class="input rounded-none rounded-s-lg w-[32rem] max-w-xs bg-[#100F0F0D]" />
+                <input type="text" placeholder="Search Your Phone" id="search-field"
+                    class="input rounded-none rounded-s-lg w-[32rem] max-w-xs bg-[#100F0F0D]" />
                 <button onclick="handleButton()" class="btn btn-primary">Search</button>
             </div>
 
+            <!-- Loading Spiner -->
+            <div id="spiner" class="text-center my-56 hidden">
+                <span class="loading loading-ring loading-lg"></span>
+            </div>
+
             <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-               
+
+            </div>
+
+            <!-- Show all Buttons -->
+            <div id="show-all-container" class="flex justify-center mt-12 hidden">
+                <button onclick="handleShowAll()" class="btn btn-accent font-bold text-white">Show All Phones</button>
+            </div>
+
+            <!-- Show Details in Modal -->
+            <div>
+                <!-- You can open the modal using ID.showModal() method -->
+                <button class="btn" onclick="show_details_modal.showModal()">open modal</button>
+                <dialog id="show_details_modal" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                    </div>
+                </dialog>
             </div>
         </section>
     </header>
