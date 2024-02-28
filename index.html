@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting API</title>
+    <!-- Link with Daisy UI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl">Hunting Phone</h1>
+
+        <section>
+            <div>
+                
+            </div>
+        </section>
+        
+        <section class="container w-[80%] mx-auto">
+            <!-- Search Phones -->
+            <div class="flex justify-center mx-auto mb-14 bg-[#100F0F0D] w-fit rounded-lg">
+                <input type="text" placeholder="Search Your Phone" id="search-field" class="input rounded-none rounded-s-lg w-[32rem] max-w-xs bg-[#100F0F0D]" />
+                <button onclick="handleButton()" class="btn btn-primary">Search</button>
+            </div>
+
+            <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+               
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="JS/api.js"></script>
+</body>
+
+</html>
